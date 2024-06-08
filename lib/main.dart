@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,10 +43,49 @@ class _MyHomePageState extends State<MyHomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: 100,
-                color: Color(0xffadecff),
-                child: Center(child: Text('Hello!!'))),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+                 children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        color: Color(0xffadecff),
+                        child: Center(child: Text('Hello!!'))
+                               ),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          color: Color(0xffcbbd68),
+                          child: Center(child: Text('Hello!!'))
+                      ),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          color: Color(0xff449141),
+                          child: Center(child: Text('Hello!!'))
+                      ),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          color: Color(0xff647c1a),
+                          child: Center(child: Text('Hello!!'))
+                      ),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          color: Color(0xffc93299),
+                          child: Center(child: Text('Hello!!'))
+                      ),
+                      Container(
+                          height: 100,
+                          width: 100,
+                          color: Color(0xffe3cf6a),
+                          child: Center(child: Text('Hello!!'))
+                      ),
+                 ],
+               ),
+          ),
             Container(
                 height: 100,
                 color: Color(0xff7bdef6),
